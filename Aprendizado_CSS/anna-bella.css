@@ -61,6 +61,8 @@ p{
     border-radius: 20px 15px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.701);
     background-attachment: scroll;
+    width: 50%;
+    height: auto;
 }
 
 section ul{
