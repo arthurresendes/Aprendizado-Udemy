@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blocos</title>
+
+    <style>
+        /*Block: Ocupa todo espaço e fica um embaixo do outro*/
+
+        /*Inline : Um do lado do outro, largura do conteudo*/
+
+        /*Inline-Block: Um embaixo do outro , porem com largura do conteudo*/
+
+        .borda1 {
+            border: 1px solid red;
+            display: block;
+        }
+
+        .borda2 {
+            border: 5px solid blue;
+            display: inline-block;
+        }
+
+        .h1{
+            font-size: 45px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 class="h1">Tipos de blocos</h1>
+
+    <br><br>
+
+    <h1 class="h1">Block</h1>
+    <div class="borda1">
+        <h1>Bloco 1</h1>
+        <p>Oi</p>
+    </div>
+    <br><br><br>
+
+    <h1 class="h1">Inline block</h1>
+    <div class="borda2">
+        <h1>Bloco 2</h1>
+        <p>Oi</p>
+    </div>
+    <br><br><br>
+    <h1 class="h1">Inline</h1> <br>
+    <a href="#" style="display: inline;">Link que fica na linha</a>
+    <a href="" style="display: inline;"> OI</a>
+
+</body>
+
+</html>
