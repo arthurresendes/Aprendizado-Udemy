@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento(static , relative , absolute e fixed)</title>
+    <style>
+        body {
+            background: #007fc7;
+        }
+
+        #container {
+            background: #fff;
+            width: 800px;
+            margin: 10px auto;
+            padding: 10px;
+        }
+
+        p{
+            width: 300px;
+        }
+
+        .absolute{
+            border: 1px solid blue;
+            position: absolute;
+            top: 0px;
+            right: 20px;
+            /*Calculda em relação ao container que ela esta*/
+        }
+
+        .relative{
+            border: 1px solid red;
+            position: relative;
+            /*Top, right , left , bottom*/
+            top: 20px;
+            left: 80px;
+            /*Deslocamento com a base inicial do documento*/
+        }
+
+            .fixed{
+                border: 1px solid green;
+                position: fixed;
+                top: 0px;
+                right:0px;
+                left: 0px;
+                /*Não se mexe mesmo com rolamento*/
+            }
+
+        
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <h1>Posicionamento</h1>
+        <p class="absolute">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo hic rerum accusamus quas eius amet delectus, incidunt quidem? Magni et culpa incidunt fugiat repudiandae quaerat voluptatem laborum molestiae dolore ex?</p>
+
+        <p class="relative">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus maxime quo assumenda nihil, impedit fugit aliquid nisi ipsam accusantium consectetur harum perspiciatis eaque odio cum temporibus placeat sint. Tenetur, quasi.</p>
+
+        <p class="fixed">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas sit atque dolorum nostrum voluptatum. Vero quaerat nobis cumque vitae perferendis, dicta doloremque unde officiis soluta accusantium voluptate mollitia accusamus blanditiis!</p>
+    </div>
+</body>
+
+</html>
