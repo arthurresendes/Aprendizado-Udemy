@@ -1,0 +1,221 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+}
+header{
+    background-color: rgb(250, 211, 95);
+}
+
+header h1 span{
+    color: rgb(91, 91, 91);
+}
+
+header h1{
+    color: white;
+    text-align: center;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.666);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    gap: 20px;
+}
+
+nav ul li{
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 2px 2px 4px rgb(58, 58, 58);
+}
+
+nav ul li a:hover{
+    color: rgb(128, 117, 0);
+    transition-duration: 0.3s;
+    font-size: 18px;
+    text-shadow: 1px 1px 2px rgba(107, 107, 107, 0.614);
+    text-decoration: underline;
+}
+
+main{
+    margin: 10px;
+}
+
+.area-principal{
+width: 920px;
+margin: 0 auto;
+}
+.area-postagens , .area-lateral{
+    background-color: white;
+    padding: 20px;
+    border: 3px solid rgba(101, 101, 101, 0.153);
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.367);
+    border-radius: 1%;
+}
+
+.area-postagens{
+    width: 660px;
+    float: left;
+    
+}
+.area-lateral{
+    width: 240px;
+    float: right;
+   margin: 10px;
+   height: 553px;
+}
+
+h2{
+    color: orange;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 2px 2px 4px rgba(86, 86, 86, 0.285);
+    font-size: 30px;
+}
+
+.data-postagem{
+    font-style: italic;
+    padding: 4px;
+    font-size: 14px;
+
+}
+
+.h2-lateral{
+    background-color: rgba(211, 211, 211, 0.573);
+    text-align: center;
+    border-radius: 2%;
+}
+
+img{
+    padding: 6px;
+    width: 100%;
+    height: auto;
+    border-radius: 5%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+a{
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 1px 1px 2px rgba(153, 153, 153, 0.37);
+}
+
+hr{
+    width: 100%;
+    background-color: orange;
+    height: 3px;
+}
+
+footer{
+    
+    clear: both;
+    padding: 10px;
+    background-color: rgba(176, 176, 176, 0.397);
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.666);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    ;
+}
+
+@media screen and (max-width: 1024px) {
+    .area-principal {
+        width: 100%;
+        margin: 0;
+        padding: 0 10px;
+    }
+
+    .area-postagens {
+        width: 100%;
+        float: none;
+    }
+
+    .area-lateral {
+        width: 100%;
+        float: none;
+        margin: 10px 0;
+        height: auto;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+/* Ajustes para telas menores, como celulares */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 30px;
+        padding: 15px 0;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .area-lateral h2 {
+        font-size: 22px;
+    }
+
+    footer {
+        font-size: 14px;
+        padding: 5px;
+    }
+}
+
+/* Ajustes para telas muito pequenas, como celulares pequenos */
+@media screen and (max-width: 480px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav ul {
+        padding: 0;
+        gap: 5px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    .area-postagens {
+        padding: 10px;
+    }
+
+    .area-lateral {
+        padding: 10px;
+    }
+}
