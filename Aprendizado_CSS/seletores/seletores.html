@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores</title>
+
+    <style>
+        /*Seletor universal: seleciona todo conteudo da pagina*/
+        * {
+            margin:4px;
+            padding: 4px;
+            
+        }
+
+        /*Seletor de texto*/
+        h1{
+            color: green;
+        }
+
+        /*Seletor de classe*/
+        .verde{
+            color: green;
+        }
+
+        /*Seletor de id*/
+
+        #border{
+            border: 1px solid black;
+        }
+
+
+        /*Seletor de filho: tem que seguir a ordem*/
+        li>a{
+            color: red;
+            text-decoration: none;
+        }
+
+        /*Seletor de descendente: nao precisa estar em ordem igual a cima*/
+        div a{
+            color: blueviolet;
+        }
+
+        /*Seletor de irmao adjascente : Pega apenas o p logo abaixo do h1*/
+        h1+p{
+            color: red;
+        }
+
+        /*Seletores de irmao geral: Pega todos p depois de h1 */
+
+    </style>
+</head>
+
+<body>
+
+    <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Sobre</a></li>
+    </ul>
+
+    <a href="">Fora do agrupamento</a>
+    <div id="border">
+        <h1>Titulo da pagina</h1>
+        <p>Paragrafo da pagina</p>
+        <p>Paragrafo 2 da pagina</p>
+    </div>
+
+    <div>
+        <h2>Titulo</h2>
+        <p>Esse é um paragrafo</p>
+        <a href="">Clique aqui</a>
+    </div>
+
+    <p class="verde">teste</p>
+    <span class="verde">Teste span</span>
+</body>
+
+</html>

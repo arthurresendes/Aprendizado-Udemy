@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barra de navegação</title>
+
+    <style>
+        ul {
+
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+
+        }
+
+        ul a {
+            display: block;
+            width: 200px;
+            height: 40px;
+            border: 1px solid red;
+            color: black;
+            text-decoration: none;
+            text-indent: 40px;
+            line-height: 40px;
+            background-image: url(menu.png);
+            background-repeat: no-repeat;
+            background-position: left bottom;
+
+        }
+
+        ul a:hover {
+            background-position: right bottom;
+            transition-duration: 0.2s;
+            background-color: #f99200;
+            color: #fff;
+        }
+
+        #home #navegacao .home a,
+        #sobre #navegacao .sobre a,
+        #servicos #navegacao .servicos a {
+            background-position: right bottom;
+            background-color: #f99200;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body id="home">
+
+    <ul id="navegacao">
+        <li class="home"><a href="barra01.html">Home</a></li>
+        <li class="sobre"><a href="sobre.html">Sobre</a></li>
+        <li class="servicos"><a href="servicos.html">Serviços</a></li>
+        <li class="noticias"><a href="noticias.html">Notícias</a></li>
+        <li class="contato"><a href="contato.html">Contato</a></li>
+    </ul>
+
+</body>
+
+</html>
