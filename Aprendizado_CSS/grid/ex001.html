@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio Grid</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr 4fr;
+            gap: 10px;
+        }
+
+        .item {
+            background: #4c6faf;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            /* mantém proporção da imagem */
+            border-radius: 8px;
+            /* opcional, só para estética */
+        }
+
+        .linhas {
+            display: grid;
+            grid-auto-rows: (4, 1fr);
+            gap: 10px;
+        }
+
+        .row {
+            background: #a54caf;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            .linhas {
+                grid-template-rows: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">
+            <h1>1</h1>
+            <img src="https://img.freepik.com/free-photo/beautiful-view-sunset-sea_23-2148019892.jpg?size=626&ext=jpg"
+                alt="">
+        </div>
+        <div class="item">
+            <h1>2</h1>
+            <img src="https://img.freepik.com/free-photo/beautiful-view-sunset-sea_23-2148019892.jpg?size=626&ext=jpg"
+                alt="">
+        </div>
+        <div class="item">
+            <h1>3</h1>
+            <img src="https://img.freepik.com/free-photo/beautiful-view-sunset-sea_23-2148019892.jpg?size=626&ext=jpg"
+                alt="">
+        </div>
+        <div class="item">
+            <h1>4</h1>
+            <img src="https://img.freepik.com/free-photo/beautiful-view-sunset-sea_23-2148019892.jpg?size=626&ext=jpg"
+                alt="">
+        </div>
+    </div>
+
+    <br><br><br><br><br>
+
+    <div class="linhas">
+        <div class="row">
+            <h1>5</h1>
+            <img src="https://img.freepik.com/free-photo/beautiful-view-sunset-sea_23-2148019892.jpg?size=626&ext=jpg"
+                alt="">
+        </div>
+        <div class="row">
+            <h1>6</h1>
+            <img src="https://img.freepik.com/free-photo/beautiful-view-sunset-sea_23-2148019892.jpg?size=626&ext=jpg"
+                alt="">
+        </div>
+        <div class="row">
+            <h1>7</h1>
+            <img src="https://img.freepik.com/free-photo/beautiful-view-sunset-sea_23-2148019892.jpg?size=626&ext=jpg"
+                alt="">
+        </div>
+        <div class="row">
+            <h1>8</h1>
+            <img src="https://img.freepik.com/free-photo/beautiful-view-sunset-sea_23-2148019892.jpg?size=626&ext=jpg"
+                alt="">
+            <img src="https://img.freepik.com/free-photo/woman-beach-with-her-baby-enjoying-sunset_52683-144131.jpg?size=626&ext=jpg"
+                alt="">
+            <img src="https://static.vecteezy.com/vite/assets/photo-masthead-375-BoK_p8LG.webp" alt="">
+            <img src="https://images.pexels.com/photos/31831857/pexels-photo-31831857/free-photo-of-jovem-em-pe-em-um-penhasco-costeiro-com-vista-para-o-oceano.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                alt="">
+            <img src="https://gratisography.com/wp-content/uploads/2025/01/gratisography-dog-vacation-800x525.jpg"
+                alt="">
+        </div>
+    </div>
+</body>
+
+</html>
