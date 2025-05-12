@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+        }
+
+        #container {
+            width: 720px;
+            margin: 0 auto;
+            background: #fff;
+        }
+
+        #marca {
+            height: 100px;
+            background: #9E9E9E;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        #conteudo {
+            width: 540px;
+            float: right;
+        }
+
+        #navegacao {
+            width: 180px;
+            float: left;
+            padding: 20px 0px;
+            background: #d1d1d1;
+        }
+
+        #rodape {
+            clear: both;
+            background: #c4c4c4;
+            padding: 5px;
+        }
+
+        #navegacao ul {
+            list-style-type: none;
+        }
+
+        #navegacao li a {
+            text-decoration: none;
+        }
+
+        #principal{
+            float: left;
+            width: 300px;
+            padding: 10px;
+        }
+
+        #secundario{
+            float: right;
+            width: 180px;
+            background: #d1d1d1;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="marca">Marca</div>
+        <div id="conteudo">
+            <div id="principal">
+                  <h2>Principal</h2>
+                <p>Animi, expedita laborum numquam, cum aliquid quos facere magni inventore ex nulla ab itaque mollitia?
+                    Tempore quasi aperiam, dignissimos ducimus eos cupiditate.</p>
+            </div>
+            <div id="secundario">
+
+                <h2>Secundario</h2>
+                <p>Animi, expedita laborum numquam, cum aliquid quos facere magni inventore ex nulla ab itaque mollitia?
+                    Tempore quasi aperiam, dignissimos ducimus eos cupiditate.</p>
+            </div>
+        </div>
+        <div id="navegacao">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Notícias</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </div>
+        <div id="rodape">Rodape</div>
+    </div>
+</body>
+
+</html>
