@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal</title>
+
+    <style>
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        width: 80%;
+        background:  #159cb0 url(fundo-horizontal.png) repeat-x;
+        float: left;
+    }
+
+   ul li{
+        float: left;
+    }
+
+    ul a{
+        text-decoration: none;
+        display: block;
+        padding: 0 2em;
+        line-height: 2em;
+        color: white;
+        font-weight: bolder;
+        font-family: Arial, Helvetica, sans-serif;
+        background: url(divisor.png) repeat-y left top;
+    }
+
+    li.primeiro a{
+        background: none;
+    }
+
+    ul a:hover{
+        color: rgb(60, 60, 60);
+        transition-duration: .3s;
+        background: #44cade;
+    }
+
+    #home #navegacao .home a,
+        #sobre #navegacao .sobre a,
+        #servicos #navegacao .servicos a {
+            background-position: right bottom;
+            background: #44cade;
+            color: #fff;
+        }
+    </style>
+</head>
+<body id="home">
+    <h2>Home</h2>
+        <ul id="navegacao">
+        <li class="home primeiro"><a href="horizontal.html">Home</a></li>
+        <li class="sobre"><a href="sobre.html">Sobre</a></li>
+        <li class="servicos"><a href="servicos.html">Serviços</a></li>
+        <li class="noticias"><a href="noticias.html">Notícias</a></li>
+        <li class="contato"><a href="contato.html">Contato</a></li>
+    </ul>
+</body>
+</html>
